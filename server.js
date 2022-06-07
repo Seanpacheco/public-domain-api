@@ -37,7 +37,7 @@ app.get('/', (request, response) => {
 })
 
 app.get('/api/:play', (request, response) => {
-    const play = request.params.name.toLowerCase()
+    const play = request.params.play.toLowerCase()
     if(publicDomainPlays[play]){
         response.json(publicDomainPlays[play])
     }else{
