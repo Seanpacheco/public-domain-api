@@ -6,19 +6,19 @@ const PORT = 8000
 app.use(cors())
 
 let publicDomainPlays = {
-    'Frankenstein': {
+    'frankenstein': {
         'playwright': 'Henry M. Milner',
         'characters': 10,
         'genre': 'Romance, Drama',
         'acts': 2
     },
-    'Pandoras Box':{
+    'pandoras box':{
         'playwright': 'Frank Wedekind',
         'characters': 19,
         'genre': 'Tragedy',
         'acts': 3
     },
-    'The Post Office':{
+    'the post office':{
         'playwright': 'Rabindranath Tagor',
         'characters': 10,
         'genre': 'Drama',
