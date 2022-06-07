@@ -37,11 +37,11 @@ app.get('/', (request, response) => {
 })
 
 app.get('/api/:name', (request, response) => {
-    const rapperName = request.params.name.toLowerCase()
-    if(rappers[rapperName]){
-        response.json(rappers[rapperName])
+    const play = request.params.name.toLowerCase()
+    if(publicDomainPlays[play]){
+        response.json(publicDomainPlays[play])
     }else{
-        response.json(rappers['unknown'])
+        response.json(publicDomainPlays['unknown'])
     }
 })
 
