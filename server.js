@@ -36,7 +36,7 @@ app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:name', (request, response) => {
+app.get('/api/:play', (request, response) => {
     const play = request.params.name.toLowerCase()
     if(publicDomainPlays[play]){
         response.json(publicDomainPlays[play])
