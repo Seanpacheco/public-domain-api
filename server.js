@@ -6,7 +6,7 @@ const PORT = 8000
 app.use(cors())
 
 let publicDomainPlays = {
-    'frankenstein': {
+    'frankenstein':{
         'playwright': 'Henry M. Milner',
         'characters': 10,
         'genre': 'Romance, Drama',
